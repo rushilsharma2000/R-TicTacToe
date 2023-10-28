@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    color:cornflowerblue;
+    background-color: rgb(46, 46, 46);
+    padding-left: 30px;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 4vw;
+}
+
+.gameContainer{
+    display: flex;
+    padding-left: 80px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 7vw;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.box{
+    border: 2px black solid;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-shadow: #FC0 1px 0 10px;
+    color: red;
+}
+
+.box:hover{
+    background-color: rgb(194, 156, 229);
+    cursor: pointer;
+}
+
+.bt-0{
+    border-top: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+.gameInfo{
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+    margin-left:40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.gameInfo h2{
+    font-size: 3vw;
+}
+
+.info{
+    padding-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2vw;
+}
+
+
+.button{
+    margin-top: 20px;
+    padding: 5px 10px;
+    font-size: 2vw;
+    border-radius: 10px;
+}
+
+.button:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: 2px blueviolet solid;
+}
+
+.imgBox img{
+    margin-top: 20px;
+    height: 200px;
+    width: 0px;
+    transition: width 1s ease-in-out ;
+}
+
+@media screen and (max-width: 800px) {
+    .gameContainer {
+        flex-wrap: wrap;
+        padding-left: 9vw;
+        
+    }
+    .container{
+        padding-left: 8vw;
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+        font-size: 15vw;
+    }
+    .gameInfo h2{
+        font-size: 6vw;
+    }
+    .gameInfo{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .button{
+        font-size: 4vw;
+    }
+    .info{
+        font-size: 4vw;
+    }
+
+    .h{
+        padding-left: 8vw;
+    }
+    
+        
+}
+
+    
